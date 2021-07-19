@@ -50,13 +50,15 @@
   #progressBar{
       width: 20rem;
       height: 3rem;
-      border: 0.2rem solid blue;
+      border: 0.3rem solid #56a5eb;
+      border-radius: 2rem;
       margin-top: 1rem;
   }
 
   #progressFull{
-      height: 2.8rem;
-      background-color: blue;
+      height: 2.35rem;
+      background-color: #56a5eb;
+      border-radius: 2rem;
       width: 0%;
   }
 
