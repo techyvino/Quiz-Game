@@ -36,11 +36,7 @@ fetch(
         formattedQuestion["choice" + (index +1)] = choice;
       })
       return formattedQuestion;
-  });
-  game.classList.remove("hidden");
-  loader.classList.add("hidden");
-
-  
+  });  
   startGame();
 })
 
@@ -51,6 +47,8 @@ startGame = () =>{
     questionCounter = 0;
     score = 0;
     availableQuestion = [...questions];
+    game.classList.remove("hidden");
+    loader.classList.add("hidden");
     stratNewQuestion();
 };
  
