@@ -3,6 +3,9 @@ const choices = Array.from(document.getElementsByClassName("choice-text"));
 const progressText = document.getElementById('progressText');
 const scoreText = document.getElementById('score');
 const progressFull = document.getElementById('progressFull');
+const game = document.getElementById('game');
+const loader = document.getElementById('loader');
+
 
 let currentQuestion = {};
 let acceptingAnswer = false;
@@ -34,6 +37,10 @@ fetch(
       })
       return formattedQuestion;
   });
+  game.classList.remove("hidden");
+  loader.classList.add("hidden");
+
+  
   startGame();
 })
 
