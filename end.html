@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="stylesheet" href="start.css">
+</head>
+<body>
+<div class="container">
+    <div id="end" class="flex-center flex-column">
+        <h1 id="finalScore">0</h1>
+        <form>
+            <input type="text" 
+            name="username"
+            id="userName"
+            placeholder="Your Name">
+
+            <button type="button" 
+            class="btn"
+            id="saveScore"
+            onclick="saveHighScores(event)"
+            disabled
+            >Save</button>
+            
+        </form>
+        <a href="game.html" class="btn">Play Agin</a>
+        <a href="Start.html" class="btn">Home</a>
+
+    </div>
+</div>
+<script src="end.js"></script>
+</body>
+</html>
